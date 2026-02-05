@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSAK - Lubuk Salak Action Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="60" rx="12" fill="currentColor"/>
+                    <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Outfit" font-weight="900" font-size="18">LSAK</text>
+                </svg>
+                <span>Lubuk Salak<br>Action Park</span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#aktiviti">Aktiviti</a></li>
+                <li><a href="#penginapan">Penginapan</a></li>
+                <li><a href="#fasiliti">Fasiliti</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#hubungi" class="nav__cta">Hubungi Kami</a></li>
+            </ul>
+            <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#aktiviti">Aktiviti</a></li>
+            <li><a href="#penginapan">Penginapan</a></li>
+            <li><a href="#fasiliti">Fasiliti</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#hubungi">Hubungi Kami</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__grain"></div>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge" data-animate="fade-up">
+                <span class="hero__badge-dot"></span>
+                Outdoor &amp; Team Building Action Park
+            </div>
+            <h1 class="hero__title" data-animate="fade-up" data-delay="1">
+                <span class="hero__title-line">Lubuk Salak</span>
+                <span class="hero__title-line hero__title-line--accent">Action Park</span>
+            </h1>
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="2">
+                Menderma Sambil Menikmati Keindahan Alam
+            </p>
+            <div class="hero__actions" data-animate="fade-up" data-delay="3">
+                <a href="#aktiviti" class="btn btn--primary">Terokai Aktiviti</a>
+                <a href="#hubungi" class="btn btn--outline">Tempah Sekarang</a>
+            </div>
+            <div class="hero__stats" data-animate="fade-up" data-delay="4">
+                <div class="hero__stat">
+                    <span class="hero__stat-value" data-count="100">0</span>
+                    <span class="hero__stat-label">Kapasiti Orang</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-value" data-count="20" data-suffix="+">0</span>
+                    <span class="hero__stat-label">Aktiviti Lasak</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-value" data-count="8">0</span>
+                    <span class="hero__stat-label">Unit Penginapan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / TENTANG -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__text" data-animate="fade-right">
+                    <span class="section-tag">Tentang Kami</span>
+                    <h2 class="section-title">Taman Aksi Luar<br>di Jantung <span class="text-accent">Perak</span></h2>
+                    <p class="about__desc">
+                        <strong>Lubuk Salak Action Park (LSAK)</strong> terletak di Lot 118, Lorong Lubok Salak, 35900 Tanjung Malim, Perak. Diuruskan oleh Nur Ramadhan Campsite yang ditubuhkan pada 16 Mac 2022, LSAK menyediakan pelbagai aktiviti outdoor dan team building yang menarik.
+                    </p>
+                    <p class="about__desc">
+                        Kami menyediakan sewaan chalet, homestay, tapak khemah dan pelbagai aktiviti rekreasi untuk keluarga, sekolah, institusi pengajian tinggi, agensi kerajaan dan swasta.
+                    </p>
+                    <div class="about__mission">
+                        <div class="about__mission-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <div>
+                            <strong>Misi Kami</strong>
+                            <p>Membantu Pusat Tahfiz Nur Ramadhan melalui hasil pendapatan penginapan dan aktiviti rekreasi di LSAK.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual" data-animate="fade-left">
+                    <div class="about__card about__card--1">
+                        <div class="about__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+                        </div>
+                        <h4>Lokasi Strategik</h4>
+                        <p>Berdekatan Tanjung Malim, mudah diakses dari KL</p>
+                    </div>
+                    <div class="about__card about__card--2">
+                        <div class="about__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                        </div>
+                        <h4>Syarikat Bumiputera</h4>
+                        <p>Berdaftar dengan SSM & MOF Malaysia</p>
+                    </div>
+                    <div class="about__card about__card--3">
+                        <div class="about__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </div>
+                        <h4>Untuk Komuniti</h4>
+                        <p>Dana menyokong pusat tahfiz & pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES / AKTIVITI -->
+    <section class="activities" id="aktiviti">
+        <div class="activities__bg"></div>
+        <div class="activities__layout">
+            <div class="activities__header" data-animate="fade-right">
+                <span class="section-tag section-tag--light">Aktiviti Kami</span>
+                <h2 class="section-title section-title--light">Pengalaman Lasak<br>yang <span class="text-accent-light">Tidak Dilupakan</span></h2>
+                <p class="activities__desc">Pelbagai aktiviti outdoor dan team building untuk semua peringkat umur</p>
+                <div class="carousel__controls">
+                    <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel__wrap">
+                <div class="carousel__track" id="carouselTrack">
+                    <div class="activity-card" data-title="Flying Fox">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=500&fit=crop" alt="Flying Fox">
+                        <div class="activity-card__overlay">
+                            <h3>Flying Fox</h3>
+                            <p>Rasai keseronokan meluncur dari ketinggian merentasi kawasan hutan tropika yang indah.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Water Confident">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=500&fit=crop" alt="Water Confident">
+                        <div class="activity-card__overlay">
+                            <h3>Water Confident</h3>
+                            <p>Aktiviti mandi sungai dengan baju keselamatan disediakan. Selamat dan menyeronokkan.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Hiking">
+                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=400&h=500&fit=crop" alt="Hiking">
+                        <div class="activity-card__overlay">
+                            <h3>Hiking</h3>
+                            <p>Terokai keindahan hutan di sekitar kawasan LSAK melalui laluan hiking yang mencabar.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Explorace">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=500&fit=crop" alt="Explorace">
+                        <div class="activity-card__overlay">
+                            <h3>Explorace</h3>
+                            <p>Cabaran berkumpulan yang menguji kekuatan fizikal dan mental peserta.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Rintangan Halangan">
+                        <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=500&fit=crop" alt="Rintangan Halangan">
+                        <div class="activity-card__overlay">
+                            <h3>Rintangan Halangan</h3>
+                            <p>Obstacle course yang menguji ketahanan dan kerjasama berpasukan.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Lake Cross">
+                        <img src="https://images.unsplash.com/photo-1468956398224-6d6f66e22c35?w=400&h=500&fit=crop" alt="Lake Cross">
+                        <div class="activity-card__overlay">
+                            <h3>Lake Cross</h3>
+                            <p>Merentasi tasik menggunakan peralatan khas. Satu pengalaman unik dan mendebarkan.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Night Walk">
+                        <img src="https://images.unsplash.com/photo-1476202499747-57c0ee0482d1?w=400&h=500&fit=crop" alt="Night Walk">
+                        <div class="activity-card__overlay">
+                            <h3>Night Walk</h3>
+                            <p>Jelajah hutan pada waktu malam. Satu pengalaman mendebarkan dalam kegelapan.</p>
+                        </div>
+                    </div>
+                    <div class="activity-card" data-title="Memanah">
+                        <img src="https://images.unsplash.com/photo-1515152872-3ffc5b18c826?w=400&h=500&fit=crop" alt="Memanah">
+                        <div class="activity-card__overlay">
+                            <h3>Memanah</h3>
+                            <p>Aktiviti memanah yang melatih fokus dan ketepatan. Sesuai untuk semua peringkat umur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="activities__more" data-animate="fade-up">
+                <p>Dan banyak lagi: Tubing, Treasure Hunt, Sukaneka, Motivasi, BBQ, Masakan Rimba, Ikhtiar Hidup, Kawad Kaki, Pertolongan Cemas & banyak lagi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCOMMODATION / PENGINAPAN -->
+    <section class="accommodation" id="penginapan">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Penginapan</span>
+                <h2 class="section-title">Pilihan Penginapan<br><span class="text-accent">Selesa & Tenang</span></h2>
+            </div>
+            <div class="accommodation__grid">
+                <div class="accom-card" data-animate="fade-up" data-delay="0">
+                    <div class="accom-card__visual">
+                        <div class="accom-card__number">01</div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                    </div>
+                    <h3>Homestay 2 Tingkat</h3>
+                    <p>Homestay selesa dua tingkat yang lengkap dengan kemudahan asas untuk keluarga.</p>
+                    <ul class="accom-card__features">
+                        <li>Ruang luas</li>
+                        <li>Pemandangan alam</li>
+                        <li>Kemudahan dapur</li>
+                    </ul>
+                </div>
+                <div class="accom-card accom-card--featured" data-animate="fade-up" data-delay="1">
+                    <div class="accom-card__badge">Popular</div>
+                    <div class="accom-card__visual">
+                        <div class="accom-card__number">02</div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/><path d="M6 11h.01M18 11h.01"/></svg>
+                    </div>
+                    <h3>Chalet Room</h3>
+                    <p>Chalet moden yang selesa dikelilingi alam semula jadi yang tenang dan damai.</p>
+                    <ul class="accom-card__features">
+                        <li>6-8 unit tersedia</li>
+                        <li>Reka bentuk moden</li>
+                        <li>Privasi terjamin</li>
+                    </ul>
+                </div>
+                <div class="accom-card" data-animate="fade-up" data-delay="2">
+                    <div class="accom-card__visual">
+                        <div class="accom-card__number">03</div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Homestay Room</h3>
+                    <p>Bilik homestay yang selesa untuk pengunjung yang menginginkan kemudahan penuh.</p>
+                    <ul class="accom-card__features">
+                        <li>Bilik bersih</li>
+                        <li>Harga berpatutan</li>
+                        <li>Lokasi strategik</li>
+                    </ul>
+                </div>
+                <div class="accom-card" data-animate="fade-up" data-delay="3">
+                    <div class="accom-card__visual">
+                        <div class="accom-card__number">04</div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V9l8-6 8 6v10"/><path d="M4 19h16"/><path d="M8 19v-5h8v5"/><path d="M12 3v4"/></svg>
+                    </div>
+                    <h3>Tapak Khemah</h3>
+                    <p>Kawasan berkhemah luas yang boleh memuatkan sehingga 100 orang peserta.</p>
+                    <ul class="accom-card__features">
+                        <li>Kapasiti 100 orang</li>
+                        <li>Kawasan luas</li>
+                        <li>Suasana alam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES / FASILITI -->
+    <section class="facilities" id="fasiliti">
+        <div class="container">
+            <div class="facilities__layout">
+                <div class="facilities__info" data-animate="fade-right">
+                    <span class="section-tag section-tag--light">Fasiliti</span>
+                    <h2 class="section-title section-title--light">Kemudahan<br><span class="text-accent-light">Lengkap</span></h2>
+                    <p class="facilities__desc">LSAK dilengkapi dengan pelbagai kemudahan untuk memastikan pengalaman anda selesa dan berbaloi.</p>
+                </div>
+                <div class="facilities__grid" data-animate="fade-left">
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Dewan Terbuka</h4>
+                            <p>Kapasiti 100 orang, sesuai untuk Family Day & Program Sekolah</p>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <div>
+                            <h4>Dewan Berbumbung</h4>
+                            <p>Kapasiti 80 orang, dilengkap meja dan kerusi batu</p>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 11a9 9 0 0118 0"/><path d="M4 11V8"/><path d="M22 11V8"/><line x1="4" y1="15" x2="22" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <h4>Jambatan Gantung</h4>
+                            <p>Menghubungkan tapak kem dan tepi sungai</p>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                        </div>
+                        <div>
+                            <h4>Kedai Runcit</h4>
+                            <p>Kemudahan membeli barangan keperluan di dalam kawasan kem</p>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div>
+                            <h4>Gazebo & Meja Payung</h4>
+                            <p>3-5 unit untuk bersantai dan berehat bersama keluarga</p>
+                        </div>
+                    </div>
+                    <div class="facility-item">
+                        <div class="facility-item__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v16M2 12h20"/></svg>
+                        </div>
+                        <div>
+                            <h4>Set BBQ</h4>
+                            <p>Set BBQ lengkap untuk aktiviti memasak bersama kumpulan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM RECORD -->
+    <section class="programs" id="galeri">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Rekod Program</span>
+                <h2 class="section-title">Dipercayai oleh <span class="text-accent">Pelbagai Organisasi</span></h2>
+            </div>
+            <div class="programs__grid" data-animate="fade-up">
+                <div class="program-item">
+                    <span class="program-item__num">01</span>
+                    <p>Kem Persekolahan Unit Beruniform Sekolah Kebangsaan Bukit Beruntung 2</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">02</span>
+                    <p>Kem Persekolahan Unit Beruniform Sekolah Kebangsaan Bukit Sentosa</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">03</span>
+                    <p>Kem Persatuan Bulan Sabit Merah dari UKM dan UPM</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">04</span>
+                    <p>Kem Sahsiah Guru SRITI dari Wilayah Persekutuan</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">05</span>
+                    <p>Kursus Organisasi Mahasiswa (UKM, UPM, UPSI)</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">06</span>
+                    <p>Kem Kepimpinan NGO - Unit Amal, Persatuan Bulan Sabit Merah, Pengakap</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">07</span>
+                    <p>Kem Sekolah Rendah dan Menengah sekitar Hulu Selangor</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">08</span>
+                    <p>Kem Ceramah dan Motivasi</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">09</span>
+                    <p>Kem Ikhtiar Hidup</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-item__num">10</span>
+                    <p>Kem Keluarga dan Persendirian - Hari Keluarga, Perkelahan & Beriadah Santai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-banner__bg"></div>
+        <div class="container">
+            <div class="cta-banner__content" data-animate="fade-up">
+                <h2>Sedia untuk Pengalaman Lasak?</h2>
+                <p>Hubungi kami untuk tempahan pakej kumpulan, sekolah, keluarga atau agensi. Pakej menarik pada kadar berpatutan.</p>
+                <div class="cta-banner__actions">
+                    <a href="tel:011-21574559" class="btn btn--primary btn--large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        011-21574559
+                    </a>
+                    <a href="mailto:nurramadhancampsite@gmail.com" class="btn btn--white btn--large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Emel Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / HUBUNGI -->
+    <section class="contact" id="hubungi">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info" data-animate="fade-right">
+                    <span class="section-tag">Hubungi Kami</span>
+                    <h2 class="section-title">Mari Berhubung<br>dengan <span class="text-accent">LSAK</span></h2>
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <p>011-21574559</p>
+                                <p>010-5265901 (Rahman)</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <strong>Emel</strong>
+                                <p>nurramadhancampsite@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Alamat</strong>
+                                <p>Lot 118, Lorong Lubok Salak,<br>35900 Tanjung Malim, Perak</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Media Sosial</strong>
+                                <p>Facebook: lubuksalakactionpark</p>
+                                <p>TikTok: @lubuksalakactionpark</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrap" data-animate="fade-left">
+                    <form class="contact__form" onsubmit="return false;">
+                        <h3>Hantar Pertanyaan</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Penuh" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" placeholder="Emel" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="No. Telefon" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Jenis Pertanyaan</option>
+                                <option>Tempahan Penginapan</option>
+                                <option>Pakej Aktiviti</option>
+                                <option>Kem Sekolah / Universiti</option>
+                                <option>Hari Keluarga / Team Building</option>
+                                <option>Lain-lain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesej anda..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Hantar Mesej</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                            <rect width="60" height="60" rx="12" fill="var(--green-500)"/>
+                            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Outfit" font-weight="900" font-size="18">LSAK</text>
+                        </svg>
+                        <div>
+                            <strong>Lubuk Salak Action Park</strong>
+                            <p>Nur Ramadhan Campsite</p>
+                        </div>
+                    </div>
+                    <p class="footer__tagline">"Menderma Sambil Menikmati Keindahan Alam"</p>
+                </div>
+                <div class="footer__links-group">
+                    <h4>Pautan Pantas</h4>
+                    <ul>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#aktiviti">Aktiviti</a></li>
+                        <li><a href="#penginapan">Penginapan</a></li>
+                        <li><a href="#fasiliti">Fasiliti</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-group">
+                    <h4>Hubungi</h4>
+                    <ul>
+                        <li><a href="tel:011-21574559">011-21574559</a></li>
+                        <li><a href="mailto:nurramadhancampsite@gmail.com">Emel</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Lubuk Salak Action Park (LSAK). Hak cipta terpelihara.</p>
+                <p>Diuruskan oleh Nur Ramadhan Campsite (NS0267437-V)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
