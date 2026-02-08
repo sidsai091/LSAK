@@ -254,4 +254,129 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- LANGUAGE TOGGLE ---
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        const langBtns = langToggle.querySelectorAll('.lang-btn');
+        let currentLang = 'ms';
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                if (lang === currentLang) return;
+
+                currentLang = lang;
+                langBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update all elements with data-ms and data-en attributes
+                document.querySelectorAll('[data-ms][data-en]').forEach(el => {
+                    const text = el.getAttribute(`data-${lang}`);
+                    if (text) {
+                        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                            el.placeholder = text;
+                        } else {
+                            el.innerHTML = text;
+                        }
+                    }
+                });
+            });
+        });
+    }
+
+    // --- CONTACT FORM SUBMISSION ---
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const inquiry = formData.get('inquiry');
+            const message = formData.get('message');
+
+            // Create WhatsApp message
+            const waMessage = `Salam, saya ${name}.\n\nJenis Pertanyaan: ${inquiry}\n\nMesej: ${message}\n\nNo. Telefon: ${phone}`;
+            const waUrl = `https://wa.me/601121574559?text=${encodeURIComponent(waMessage)}`;
+
+            window.open(waUrl, '_blank');
+        });
+    }
+
+    // --- FACILITIES CAROUSEL ---
+    const facTrack = document.getElementById('facCarouselTrack');
+    const facPrev = document.getElementById('facPrev');
+    const facNext = document.getElementById('facNext');
+
+    if (facTrack && facPrev && facNext) {
+        const slides = facTrack.querySelectorAll('.fac-slide');
+        const items = document.querySelectorAll('.public-item');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            // Validate index
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+
+            currentIndex = index;
+
+            // Update slides
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            // Update items highlight
+            items.forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        facPrev.addEventListener('click', () => showSlide(currentIndex - 1));
+        facNext.addEventListener('click', () => showSlide(currentIndex + 1));
+
+        // Allow clicking on items to jump to slide
+        items.forEach((item, i) => {
+            item.addEventListener('click', () => showSlide(i));
+            item.style.cursor = 'pointer';
+        });
+    }
+
+    // --- LIGHTBOX ---
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Lightbox Image">
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('img');
+    const galleryImages = document.querySelectorAll('.gallery-img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
 });
+
